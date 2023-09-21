@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.flickity-page-dot:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #dae0e0 !important;
+}
+
+.flickity-page-dot {
+  background: #a1acad !important;
+}
+
+.flickity-page-dot.is-selected {
+  background: #333f40 !important;
+}
+
+.slide:last-of-type {
+  width: 100%;
+}
+@font-face {
+  font-family: "BasisGrotesque";
+  src: url("/fonts/BasisGrotesquePro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BEditorsNote";
+  src: url("/fonts/Editor'sNote-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EditorsNoteLight";
+  src: url("/fonts/Editor'sNote-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EditorsNoteThin";
+  src: url("/fonts/Editor'sNote-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.step {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #f2f2ee;
+}
+
+.step.active {
+  color: #a1adae;
+}

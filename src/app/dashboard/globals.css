@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: "BasisGrotesque";
+  src: url("/fonts/BasisGrotesquePro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BEditorsNote";
+  src: url("/fonts/Editor'sNote-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EditorsNoteLight";
+  src: url("/fonts/Editor'sNote-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EditorsNoteThin";
+  src: url("/fonts/Editor'sNote-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.step {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #F2F2EE;
+}
+
+.step.active {
+  color: #A1ADAE;
+}
+
+
+.custom-scroll::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.2rem;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #A6A6A6;
+  border-radius: 12px;
+}
